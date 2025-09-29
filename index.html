@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DebtTracker - Вход</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-container">
+            <h1>DebtTracker</h1>
+            <p class="subtitle">Учет долгов между друзьями</p>
+            
+            <div id="auth-form">
+                <h2>Вход в систему</h2>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Ваш email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" placeholder="Ваш пароль">
+                </div>
+                <button id="login-btn" class="btn-primary">Войти</button>
+                <button id="signup-btn" class="btn-secondary">Зарегистрироваться</button>
+                <button id="google-login-btn" class="btn-google">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjUxIDkuMjA0NTVWOS4wOTU0NUg5LjE4VjEwLjc3MjdIMTMuNDQxQzEzLjEwOCAxMi4xODY0IDEyLjA1NyAxMy4yMjI3IDEwLjY4IDEzLjY4MThWMTUuNjQwOUgxMy40ODFDMTUuNDk1IDEzLjg2MzYgMTYuNTEgMTEuMjcyNyAxNi41MSA5LjIwNDU1WiIgZmlsbD0iIzQyODVGNCIvPgo8cGF0aCBkPSJNOS4xOCAxNi41QzExLjYyIDE2LjUgMTMuNjgxIDE1LjY4MTggMTUuMTk1IDE0LjM1OTFMMTIuOTk1IDEyLjc3MjdDMTIuMTg2IDEzLjM0MDkgMTEuMTQxIDEzLjcyNzMgOS45NTkgMTMuNzI3M0M3LjY4MTggMTMuNzI3MyA1Ljc3MjcgMTIuMTM2NCA1LjA0NTQ1IDkuOTk5OTlIMiuxMzYzNlYxMS45NTQ1QzMuNjY4MTggMTQuODQwOSA2LjI3MjczIDE2LjUgOS4xOCAxNi41WiIgZmlsbD0iIzM0QTgzNSIvPgo8cGF0aCBkPSJNNS4wNDU0NSA5Ljk5OTk5QzQuODA0NTUgOS4zMTgxOCA0LjY4MTgyIDguNTkwOTEgNC42ODE4MiA3LjgxODJDNCA3LjA0NTQ1IDQuMTIyNzMgNi4zMTgxOCA0LjM2MzY0IDUuNjM2MzZWMi42ODE4MkgyLjEzNjM2QzEuNDA5MDkgMy45NTQ1NSAxIDUuNDU0NTUgMSA3LjA0NTQ1QzEgOC42MzYzNiAxLjQwOTA5IDEwLjEzNjQgMi4xMzYzNiAxMS40MDkxTDUuMDQ1NDUgOS45OTk5OVoiIGZpbGw9IiNGQkJCMDAiLz4KPHBhdGggZD0iTTkuMTggMi4zMTgxOEMxMC43NzMgMi4zMTgxOCAxMi4xODYgMi45NTQ1NSAxMy4yNzMgMy45NTQ1NUwxNS4zMTggMS45MDkwOUMxMy42ODEgMC40MDkwOTEgMTEuNjE4IC0wLjMxODE4MiA5LjE4IC0wLjMxODE4MkM2LjI3MjczIC0wLjMxODE4MiAzLjY2ODE4IDEuMzQwOTEgMi4xMzYzNiA0LjIyNzI3TDUuMDQ1NDUgNS42MzYzNkM1Ljc3MjcgMy41IDcuNjgxOCAyLjMxODE4IDkuMTggMi4zMTgxOFoiIGZpbGw9IiNFQTQyMzUiLz4KPC9zdmc+" alt="Google">
+                    Войти через Google
+                </button>
+                <p id="auth-message" class="message"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
